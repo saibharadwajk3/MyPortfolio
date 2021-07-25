@@ -1,4 +1,6 @@
 import styles from "../styles/Navbar.module.css";
+import { icons } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
@@ -13,19 +15,28 @@ const Navbar = () => {
         <ul className={styles.nav_links}>
           <li>
             <a href="#projects">
-              <i className="fas fa-code"></i>
+              <FontAwesomeIcon
+                icon={icons.faCode}
+                className={styles.FontAwesomeIcon}
+              />
               <span>projects</span>
             </a>
           </li>
           <li>
             <a href="#skills">
-              <i className="fab fa-codiepie"></i>
+              <FontAwesomeIcon
+                icon={icons.faCodiepie}
+                className={styles.FontAwesomeIcon}
+              />
               <span>skills</span>
             </a>
           </li>
           <li>
             <a href="#contact">
-              <i className="fas fa-envelope"></i>
+              <FontAwesomeIcon
+                icon={icons.faEnvelope}
+                className={styles.FontAwesomeIcon}
+              />
               <span>contact</span>
             </a>
           </li>

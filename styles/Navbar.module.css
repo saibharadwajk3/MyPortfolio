@@ -38,9 +38,12 @@
   list-style: none;
 }
 .nav_links li a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: dimgray;
+}
+.nav_links li span {
+  margin-left: 5px;
 }
 .nav_links li {
   flex-wrap: wrap;
@@ -70,8 +73,10 @@
 .nav_links li :focus {
   color: orangered;
 }
-.nav_links li a i {
-  margin-right: 5px;
+.FontAwesomeIcon {
+  position: relative;
+  top: 3px;
+  width: 18px;
 }
 @media (max-width: 650px) {
   .logo {
@@ -93,9 +98,7 @@
     margin: 0 0.7rem;
     padding: 0.2rem 0.8rem;
   }
-  .nav_links li a i {
-    font-size: 1.2rem;
-  }
+
   .nav_links li span {
     display: none;
   }

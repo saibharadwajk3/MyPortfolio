@@ -1,5 +1,6 @@
 import styles from "../styles/Contact.module.css";
-
+import { icons } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Contact = () => {
   return (
     <section id="contact">
@@ -54,7 +55,10 @@ const Contact = () => {
                 id="submit"
               />
               <label htmlFor="submit">
-                <i className="fas fa-paper-plane"></i>
+                <FontAwesomeIcon
+                  icon={icons.faPaperPlane}
+                  className={styles.FontAwesomeIcon}
+                />
               </label>
             </div>
           </form>

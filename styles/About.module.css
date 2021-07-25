@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: minmax(90vh, auto);
+  grid-template-rows: minmax(80vh, auto);
   justify-items: center;
   align-items: center;
   background-color: #efeeee;
@@ -29,30 +29,39 @@
   margin-top: 1.5em;
   margin-bottom: 2em;
 }
-.icons::selection {
-  background: #a1a1a1;
+.icons:first-child {
+  margin-left: 0px;
 }
-.icons a:hover {
-  cursor: pointer;
-}
-
-.icons i {
-  margin-left: 1em;
-  font-size: 1.8em;
-  transition: 0.3s;
-  padding: 0.5em;
-  color: dimgray;
+.btn {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  background-color: #efeeee;
-  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  background: #efeeee;
+  display: inline-block;
+  margin-left: 30px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+  transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  font-size: 16px;
+  color: dimgray;
+  text-decoration: none;
 }
-
-.icons i:hover,
-.icons i:focus {
+.btn .FontAwesomeIcon {
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 0px 10px;
+}
+.btn:active,
+.btn:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
   color: orangered;
-  transform: scale(1.05);
-  background: #cccccc;
-  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
 }
 
 .profile {

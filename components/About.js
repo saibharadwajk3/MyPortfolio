@@ -1,5 +1,6 @@
 import styles from "../styles/About.module.css";
-
+import { icons } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const About = () => {
   return (
     <section id="about">
@@ -17,24 +18,33 @@ const About = () => {
           <div className={styles.icons}>
             <a
               href="https://github.com/saibharadwajk3"
-              rel="noreferrer"
               target="_blank"
+              className={styles.btn}
             >
-              <i className="fab fa-github"></i>
+              <FontAwesomeIcon
+                icon={icons.faGithub}
+                className={styles.FontAwesomeIcon}
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/saibharadwajk3/"
-              rel="noreferrer"
               target="_blank"
+              className={styles.btn}
             >
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon
+                icon={icons.faLinkedin}
+                className={styles.FontAwesomeIcon}
+              />
             </a>
             <a
               href="https://twitter.com/saibharadwajk3"
-              rel="noreferrer"
               target="_blank"
+              className={styles.btn}
             >
-              <i className="fab fa-twitter"></i>
+              <FontAwesomeIcon
+                icon={icons.faTwitter}
+                className={styles.FontAwesomeIcon}
+              />
             </a>
           </div>
         </div>

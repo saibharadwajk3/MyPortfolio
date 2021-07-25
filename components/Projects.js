@@ -1,6 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import { projects } from "../data";
-
+import { icons } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Projects = () => {
   return (
     <section id="projects">
@@ -19,11 +20,19 @@ const Projects = () => {
                 <div className={styles.links}>
                   <a href="#">
                     {" "}
-                    <i className="fab fa-github"></i>source
+                    <FontAwesomeIcon
+                      icon={icons.faGithub}
+                      className={styles.FontAwesomeIcon}
+                    />
+                    <span>Source</span>
                   </a>
                   <a href="#">
                     {" "}
-                    <i className="fa fa-globe"></i>Live
+                    <FontAwesomeIcon
+                      icon={icons.faGlobe}
+                      className={styles.FontAwesomeIcon}
+                    />
+                    <span>Live</span>
                   </a>
                 </div>
               </div>

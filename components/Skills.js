@@ -1,9 +1,7 @@
 import styles from "../styles/Skills.module.css";
-
 import React from "react";
 import { skills } from "../data";
 const [frontend, backend] = skills;
-console.log(frontend);
 
 const Skills = () => {
   return (

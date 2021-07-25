@@ -1,3 +1,29 @@
+import {
+  faCode,
+  faEnvelope,
+  faDownload,
+  faGlobe,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin,
+  faCodiepie,
+} from "@fortawesome/free-brands-svg-icons";
+
+export const icons = {
+  faCode,
+  faEnvelope,
+  faGithub,
+  faTwitter,
+  faLinkedin,
+  faCodiepie,
+  faDownload,
+  faGlobe,
+  faPaperPlane,
+};
+
 export const projects = [
   {
     id: 1,
