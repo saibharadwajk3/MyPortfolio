@@ -1,0 +1,95 @@
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.description h1 {
+  /* font-family: "Roboto", sans-serif; */
+  margin-top: 2rem;
+  color: orangered;
+}
+.contact_container {
+  background-color: #efeeee;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 10px;
+  margin: 30px 80px;
+}
+/* Left side Design*/
+.contact_left {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  color: #52565e;
+}
+.contact_form {
+  margin-top: 10px;
+  width: 100%;
+}
+.single_row {
+  display: flex;
+  justify-content: space-between;
+}
+.form_in {
+  padding: 0.5em;
+  font-size: 14px;
+  width: 100%;
+  resize: vertical;
+  margin-top: 1em;
+  background: #eeeeee;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white,
+    4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+  outline: none;
+  color: #52565e;
+}
+.single_row + input {
+  margin: 0 10px;
+}
+.ml {
+  margin-left: 10px;
+}
+.mr {
+  margin-right: 10px;
+}
+
+.multiple_row {
+  position: relative;
+}
+.text {
+  min-height: 200px;
+}
+.submitForm {
+  display: none;
+}
+.submitForm + label {
+  position: absolute;
+  font-size: 14px;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #efeeee;
+  border-radius: 100%;
+  color: #eeeeee;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white,
+    4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+  cursor: pointer;
+  color: dimgray;
+}
+
+.submitForm + label:hover {
+  box-shadow: inset 5px 5px 12px #e0e0e0, inset -5px -5px 12px #fcfcfc;
+  color: orangered;
+}
+
+@media (max-width: 500px) {
+  .contact_container {
+    margin: 10px 30px;
+  }
+}
+@media (max-width: 350px) {
+  .contact_container {
+    margin: 0px 10px;
+  }
+}

@@ -1,0 +1,129 @@
+.container {
+  background-color: #efeeee;
+
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 10px;
+  margin: 30px 80px;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.description h1 {
+  /* font-family: "Roboto", sans-serif; */
+  margin-top: 2rem;
+  color: orangered;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  margin: 0 80px;
+  align-items: center;
+  justify-items: center;
+}
+.project {
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px;
+  display: flex;
+  position: relative;
+}
+
+.project img {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.details {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 8px 10px;
+  opacity: 0;
+}
+
+.details h2 {
+  font-weight: bold;
+}
+
+.links {
+  margin-top: 10px;
+  display: flex;
+}
+.details a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.4rem 1rem;
+  float: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  color: dimgray;
+  text-decoration: none;
+}
+.details a i {
+  margin-right: 5px;
+}
+.details:hover,
+.details:focus {
+  background: #efeeee;
+  opacity: 100;
+}
+
+.details a:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+  color: orangered;
+}
+
+.details a:focus {
+  outline: none;
+  transform: scale(0.95);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white,
+    4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+  color: orangered;
+}
+@media (max-width: 900px) {
+  .projects {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0 30px;
+  }
+  .projects {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    margin: 0 10px;
+  }
+  .projects {
+    margin-left: 1px;
+  }
+}

@@ -1,0 +1,71 @@
+.container {
+  background-color: #efeeee;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 10px;
+  margin: 20px 80px 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-content: center;
+  justify-items: center;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.email a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: dimgray;
+  transition: all 0.2s ease-out, transform 0.2s ease-out;
+}
+.email a:hover {
+  transform: scale(1.05);
+  color: orangered;
+}
+.email i,
+.resume i {
+  margin-right: 5px;
+}
+
+.resume a {
+  text-decoration: none;
+  /* margin: 0 1rem; */
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 10px;
+  /* font-family: "Roboto", sans-serif; */
+  cursor: pointer;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  color: dimgray;
+}
+
+.resume a:hover,
+.resume a:focus {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+  color: orangered;
+}
+
+.email,
+.resume,
+.copRight {
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 10px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    margin: 10px;
+  }
+  .resume a {
+    padding: 0.3rem 1rem;
+  }
+}

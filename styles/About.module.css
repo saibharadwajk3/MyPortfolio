@@ -1,0 +1,146 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: minmax(90vh, auto);
+  justify-items: center;
+  align-items: center;
+  background-color: #efeeee;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 10px;
+  margin: 30px 80px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.title h2 {
+  text-align: center;
+  color: dimgray;
+}
+.title span {
+  font-size: 2rem;
+  color: orangered;
+}
+.icons {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+.icons::selection {
+  background: #a1a1a1;
+}
+.icons a:hover {
+  cursor: pointer;
+}
+
+.icons i {
+  margin-left: 1em;
+  font-size: 1.8em;
+  transition: 0.3s;
+  padding: 0.5em;
+  color: dimgray;
+  border-radius: 50%;
+  background-color: #efeeee;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+}
+
+.icons i:hover,
+.icons i:focus {
+  color: orangered;
+  transform: scale(1.05);
+  background: #cccccc;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+}
+
+.profile {
+  width: 350px;
+  height: 350px;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+.profile:hover img {
+  transform: scale(1.05);
+}
+@media (max-width: 910px) {
+  .profile {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 40vh);
+    padding: 30px 0px;
+  }
+  .about {
+    margin-top: 70px;
+    order: 2;
+  }
+  .profile {
+    order: 1;
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about {
+    order: 2;
+    margin-top: 70px;
+  }
+  .profile {
+    order: 1;
+    width: 230px;
+    height: 230px;
+  }
+
+  .title span {
+    font-size: 1.5rem;
+  }
+  .icons i {
+    font-size: 1.2em;
+  }
+  .links a {
+    margin: 1rem 0.4rem;
+    padding: 0.1rem 0.5rem;
+  }
+  .container {
+    grid-template-rows: repeat(2, 30vh);
+    margin: 10px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title span {
+    font-size: 1.5rem;
+  }
+  .icons i {
+    font-size: 1.5em;
+  }
+  .links a {
+    margin: 1rem 0.4rem;
+    padding: 0.1rem 0.5rem;
+  }
+  .container {
+    margin: 10px 10px;
+  }
+}
