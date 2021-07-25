@@ -10,7 +10,7 @@ const Projects = () => {
         </div>
         <div className={styles.projects}>
           {projects.map((project) => (
-            <div className={styles.project}>
+            <div className={styles.project} key={project.id}>
               <img alt="gallery" src={project.image} />
               <div className={styles.details}>
                 <h2>{project.subtitle}</h2>
@@ -19,11 +19,11 @@ const Projects = () => {
                 <div className={styles.links}>
                   <a href="#">
                     {" "}
-                    <i class="fab fa-github"></i>source
+                    <i className="fab fa-github"></i>source
                   </a>
                   <a href="#">
                     {" "}
-                    <i class="fa fa-globe"></i>Live
+                    <i className="fa fa-globe"></i>Live
                   </a>
                 </div>
               </div>

@@ -13,19 +13,19 @@ const Navbar = () => {
         <ul className={styles.nav_links}>
           <li>
             <a href="#projects">
-              <i class="fas fa-code"></i>
+              <i className="fas fa-code"></i>
               <span>projects</span>
             </a>
           </li>
           <li>
             <a href="#skills">
-              <i class="fab fa-codiepie"></i>
+              <i className="fab fa-codiepie"></i>
               <span>skills</span>
             </a>
           </li>
           <li>
             <a href="#contact">
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
               <span>contact</span>
             </a>
           </li>

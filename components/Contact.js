@@ -10,12 +10,12 @@ const Contact = () => {
           </div>
 
           <form
-            netlify
             name="contact"
             method="POST"
             data-netlify="true"
             className={styles.contact_form}
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div className={styles.single_row}>
               <input
                 type="text"
@@ -54,7 +54,7 @@ const Contact = () => {
                 id="submit"
               />
               <label htmlFor="submit">
-                <i class="fas fa-paper-plane"></i>
+                <i className="fas fa-paper-plane"></i>
               </label>
             </div>
           </form>

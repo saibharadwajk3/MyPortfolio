@@ -6,13 +6,13 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.email}>
           <a href="mailto:saibharadwaj.k3@gmail.com">
-            <i class="fas fa-envelope"></i>Email
+            <i className="fas fa-envelope"></i>Email
           </a>
         </div>
         <div className={styles.copRight}>&copy; 2021 SaiBharadwaj</div>
         <div className={styles.resume}>
           <a href="./resume.pdf" color="transparent" target="_blank" download>
-            <i class="fas fa-download"></i>Resume
+            <i className="fas fa-download"></i>Resume
           </a>
         </div>
       </footer>

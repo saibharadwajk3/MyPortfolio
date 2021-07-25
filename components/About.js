@@ -7,7 +7,7 @@ const About = () => {
         <div className={styles.about}>
           <div className={styles.title}>
             <h3>
-              Hey there, Im <br />
+              Hey there, I'm <br />
               <span>Sai Bharadwaj</span>
               <br />
               Student & web developer
@@ -15,17 +15,26 @@ const About = () => {
           </div>
 
           <div className={styles.icons}>
-            <a href="https://github.com/saibharadwajk3" target="_blank">
-              <i class="fab fa-github"></i>
+            <a
+              href="https://github.com/saibharadwajk3"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/saibharadwajk3/"
+              rel="noreferrer"
               target="_blank"
             >
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://twitter.com/saibharadwajk3" target="_blank">
-              <i class="fab fa-twitter"></i>
+            <a
+              href="https://twitter.com/saibharadwajk3"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-twitter"></i>
             </a>
           </div>
         </div>
