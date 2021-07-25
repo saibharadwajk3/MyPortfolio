@@ -18,6 +18,7 @@ const About = () => {
           <div className={styles.icons}>
             <a
               href="https://github.com/saibharadwajk3"
+              rel="noreferrer"
               target="_blank"
               className={styles.btn}
             >
@@ -28,6 +29,7 @@ const About = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/saibharadwajk3/"
+              rel="noreferrer"
               target="_blank"
               className={styles.btn}
             >
@@ -38,6 +40,7 @@ const About = () => {
             </a>
             <a
               href="https://twitter.com/saibharadwajk3"
+              rel="noreferrer"
               target="_blank"
               className={styles.btn}
             >
