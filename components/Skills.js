@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 const Skills = () => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.2 });
   const LeftAnimation = useAnimation();
   const RightAnimation = useAnimation();
   useEffect(() => {
@@ -36,7 +36,7 @@ const Skills = () => {
       LeftAnimation.start({ x: "-5vw", opacity: 0 });
       RightAnimation.start({ x: "5vw", opacity: 0 });
     }
-  }, [inView]);
+  }, [inView, LeftAnimation, RightAnimation]);
   return (
     <section id="skills">
       <div className={styles.container}>

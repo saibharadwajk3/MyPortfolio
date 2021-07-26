@@ -10,7 +10,6 @@ import { useAnimation } from "framer-motion";
 const Projects = () => {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
-
   useEffect(() => {
     if (inView) {
       animation.start({
@@ -27,7 +26,7 @@ const Projects = () => {
     if (!inView) {
       animation.start({ opacity: 0, scale: 0 });
     }
-  }, [inView]);
+  }, [inView, animation]);
 
   return (
     <section id="projects">

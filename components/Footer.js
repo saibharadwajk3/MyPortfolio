@@ -25,7 +25,7 @@ const Footer = () => {
     if (!inView) {
       animation.start({ opacity: 0, scale: 0 });
     }
-  }, [inView]);
+  }, [inView, animation]);
   return (
     <div ref={ref} className={styles.container}>
       <footer className={styles.footer}>
