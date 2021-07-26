@@ -70,9 +70,8 @@
   margin-left: 5px;
 }
 .details a {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.4rem 1rem;
+  padding: 2px 5px;
+  margin: 6px 8px 6px 8px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
   border-radius: 10px;
@@ -90,7 +89,7 @@
 .details:hover,
 .details:focus {
   background: #efeeee;
-  animation: opacity 0.5s linear forwards;
+  animation: opacity 0.8s linear forwards;
 }
 
 @keyframes opacity {
@@ -103,19 +102,6 @@
   }
 }
 
-.details a:hover {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
-  color: orangered;
-}
-
-.details a:focus {
-  outline: none;
-  transform: scale(0.95);
-  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white,
-    4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
-  color: orangered;
-}
 @media (max-width: 900px) {
   .projects {
     margin: 0 20px;

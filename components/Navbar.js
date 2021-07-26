@@ -1,8 +1,24 @@
 import styles from "../styles/Navbar.module.css";
 import { icons } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 3.5,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
@@ -12,8 +28,13 @@ const Navbar = () => {
       </div>
 
       <nav>
-        <ul className={styles.nav_links}>
-          <li>
+        <motion.ul
+          className={styles.nav_links}
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.li variants={item}>
             <a href="#projects">
               <FontAwesomeIcon
                 icon={icons.faCode}
@@ -21,8 +42,8 @@ const Navbar = () => {
               />
               <span>projects</span>
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item}>
             <a href="#skills">
               <FontAwesomeIcon
                 icon={icons.faCodiepie}
@@ -30,8 +51,8 @@ const Navbar = () => {
               />
               <span>skills</span>
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={item}>
             <a href="#contact">
               <FontAwesomeIcon
                 icon={icons.faEnvelope}
@@ -39,8 +60,8 @@ const Navbar = () => {
               />
               <span>contact</span>
             </a>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       </nav>
     </header>
   );

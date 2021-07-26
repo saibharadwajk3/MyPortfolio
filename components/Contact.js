@@ -24,6 +24,7 @@ const Contact = () => {
                 name="firstName"
                 placeholder="First Name"
                 className={`${styles.form_in} ${styles.mr}`}
+                required
               />
               <input
                 type="text"
@@ -31,6 +32,7 @@ const Contact = () => {
                 name="lastName"
                 placeholder="Last Name"
                 className={`${styles.form_in} ${styles.ml}`}
+                required
               />
             </div>
 
@@ -41,12 +43,14 @@ const Contact = () => {
                 name="email"
                 placeholder="Email"
                 className={styles.form_in}
+                required
               />
               <textarea
                 id="message"
                 name="message"
                 placeholder="Your Message"
                 className={`${styles.form_in} ${styles.text}`}
+                required
               ></textarea>
               <input
                 type="submit"

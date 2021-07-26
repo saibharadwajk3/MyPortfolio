@@ -60,6 +60,10 @@
   .container {
     margin: 10px 30px;
   }
+  .email,
+  .resume {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -68,5 +72,9 @@
   }
   .resume a {
     padding: 0.3rem 1rem;
+  }
+  .email,
+  .resume {
+    margin-top: 10px;
   }
 }

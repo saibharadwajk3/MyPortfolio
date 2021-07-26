@@ -2,8 +2,41 @@ import styles from "../styles/Skills.module.css";
 import React from "react";
 import { skills } from "../data";
 const [frontend, backend] = skills;
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
 const Skills = () => {
+  const { ref, inView } = useInView({ threshold: 0.1 });
+  const LeftAnimation = useAnimation();
+  const RightAnimation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      LeftAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+      RightAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+
+    if (!inView) {
+      LeftAnimation.start({ x: "-5vw", opacity: 0 });
+      RightAnimation.start({ x: "5vw", opacity: 0 });
+    }
+  }, [inView]);
   return (
     <section id="skills">
       <div className={styles.container}>
@@ -13,9 +46,9 @@ const Skills = () => {
         </div>
 
         {/* skills */}
-        <div className={styles.skills}>
+        <div ref={ref} className={styles.skills}>
           {/* frontend */}
-          <div className={styles.contain}>
+          <motion.div className={styles.contain} animate={LeftAnimation}>
             <h2 className={styles.stack}>{frontend.stack}</h2>
             <div className={styles.frontend}>
               {frontend.skills.map((skill) => (
@@ -27,10 +60,10 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* backend */}
-          <div className={styles.contain}>
+          <motion.div className={styles.contain} animate={RightAnimation}>
             <h2 className={styles.stack}>{backend.stack}</h2>
             <div className={styles.backend}>
               {backend.skills.map((skill) => (
@@ -42,7 +75,7 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
