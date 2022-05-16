@@ -74,7 +74,7 @@ const About = () => {
             animate={{ scale: 1 }}
             transition={{ ease: "easeIn" }}
             whileHover={{ scale: 1.05 }}
-            src="./logo.jpg"
+            src="./profile.jpg"
             alt=""
           />
         </div>

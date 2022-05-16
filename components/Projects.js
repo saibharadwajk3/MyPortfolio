@@ -49,7 +49,8 @@ const Projects = () => {
                 <p>{project.description}</p>
                 <div className={styles.links}>
                   <motion.a
-                    href="#"
+                    href={project.source}
+                    target="_blank"
                     whileHover={{ scale: 1.05, color: "orangered" }}
                   >
                     {" "}
@@ -60,7 +61,8 @@ const Projects = () => {
                     <span>Source</span>
                   </motion.a>
                   <motion.a
-                    href="#"
+                    href={project.live}
+                    target="_blank"
                     whileHover={{ scale: 1.05, color: "orangered" }}
                   >
                     {" "}
