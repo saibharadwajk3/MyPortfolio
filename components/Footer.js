@@ -39,7 +39,7 @@ const Footer = () => {
           </a>
         </motion.div>
         <motion.div className={styles.copRight} animate={animation}>
-          &copy; 2021 SaiBharadwaj
+          &copy; 2022 SaiBharadwaj
         </motion.div>
         <motion.div className={styles.resume} animate={animation}>
           <a href="./resume.pdf" color="transparent" target="_blank" download>
